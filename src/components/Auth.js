@@ -26,6 +26,7 @@ export default function Auth() {
         try{
         await createUserWithEmailAndPassword(auth,email,password)
         }catch(err){
+            alert(err)
             console.error(err)
         }
     }
@@ -34,6 +35,7 @@ export default function Auth() {
         try{
             await signInWithPopup(auth,googleProvider);
         }catch(err){
+            alert(err)
             console.error(err);
         }
     }
@@ -42,6 +44,7 @@ export default function Auth() {
         try{
             await signOut(auth);
         }catch(err){
+            alert(err)
             console.error(err);
         }
     }
@@ -49,11 +52,11 @@ export default function Auth() {
 
   return (
     <div>
-      <input placeholder='Email...' onChange={OnChangeEmail}/>
-      <input placeholder='Password...' type='password' onChange={onChangePassword}/>
-      <button onClick={signIn}>Sign In</button>
-      <button onClick={signInWithGoogle}>Sign In with Google</button>
-      <button onClick={logOut}>log Out</button>
+      <input className="mx-2" placeholder='Email...' onChange={OnChangeEmail}/>
+      <input className="mx-2" placeholder='Password...' type='password' onChange={onChangePassword}/>
+      <button className="mx-2" onClick={signIn}>Sign In</button>
+      <button className="mx-2" onClick={signInWithGoogle}>Sign In with Google</button>
+      <button className="mx-2" onClick={logOut}>log Out</button>
     </div>
   )
 }

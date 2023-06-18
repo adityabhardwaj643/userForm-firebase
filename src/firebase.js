@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import {getAuth} from 'firebase/auth'
 import { GoogleAuthProvider } from "firebase/auth";
+import {getFirestore} from 'firebase/firestore'
 
 
 const firebaseConfig = {
@@ -15,4 +16,5 @@ const firebaseConfig = {
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const googleProvider = new GoogleAuthProvider();
-export const auth = getAuth(app);
+export const auth = getAuth(app); //making instance of getAuth here and can export anywhere then
+export const db = getFirestore(app)//same but here we make instance of getFirestore
