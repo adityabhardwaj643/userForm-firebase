@@ -1,3 +1,9 @@
+#Using the App
+use the link given below to check the hosted website
+http://app223-2fa99.web.app
+The app is created using react and firebase(authentication,firestore database and hosting)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
