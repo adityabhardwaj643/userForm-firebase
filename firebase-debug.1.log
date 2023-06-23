@@ -1,0 +1,66 @@
+[debug] [2023-06-21T06:13:51.274Z] ----------------------------------------------------------------------
+[debug] [2023-06-21T06:13:51.276Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bhard\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-06-21T06:13:51.276Z] CLI Version:   12.4.0
+[debug] [2023-06-21T06:13:51.277Z] Platform:      win32
+[debug] [2023-06-21T06:13:51.277Z] Node Version:  v18.16.0
+[debug] [2023-06-21T06:13:51.278Z] Time:          Wed Jun 21 2023 11:43:51 GMT+0530 (India Standard Time)
+[debug] [2023-06-21T06:13:51.278Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-21T06:13:51.418Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-21T06:13:51.419Z] > authorizing via signed-in user (bhardwajaddy223@gmail.com)
+[debug] [2023-06-21T06:13:51.419Z] [iam] checking project app223-2fa99 for permissions ["firebase.projects.get"]
+[debug] [2023-06-21T06:13:51.422Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/app223-2fa99:testIamPermissions [none]
+[debug] [2023-06-21T06:13:51.422Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/app223-2fa99:testIamPermissions x-goog-quota-user=projects/app223-2fa99
+[debug] [2023-06-21T06:13:51.423Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/app223-2fa99:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-06-21T06:13:52.905Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/app223-2fa99:testIamPermissions 200
+[debug] [2023-06-21T06:13:52.906Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/app223-2fa99:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-06-21T06:13:52.908Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99 [none]
+[debug] [2023-06-21T06:13:53.370Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99 200
+[debug] [2023-06-21T06:13:53.370Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99 {"projectId":"app223-2fa99","projectNumber":"638284654746","displayName":"app223","name":"projects/app223-2fa99","resources":{"hostingSite":"app223-2fa99"},"state":"ACTIVE","etag":"1_86e8b502-be21-46fc-a66f-77027de35233"}
+[info] 
+[info] === Serving from 'C:\Users\bhard\OneDrive\Desktop\firebase\userForm-firebase'...
+[info] 
+[debug] [2023-06-21T06:13:53.376Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/app223-2fa99/sites 
+[debug] [2023-06-21T06:13:54.452Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/app223-2fa99/sites 200
+[debug] [2023-06-21T06:13:54.452Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/app223-2fa99/sites {"sites":[{"name":"projects/app223-2fa99/sites/app223-2fa99","defaultUrl":"https://app223-2fa99.web.app","appId":"1:638284654746:web:c85ab945634c961bee5723","type":"DEFAULT_SITE"}]}
+[debug] [2023-06-21T06:13:54.453Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99/webApps/1:638284654746:web:c85ab945634c961bee5723/config [none]
+[debug] [2023-06-21T06:13:55.727Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99/webApps/1:638284654746:web:c85ab945634c961bee5723/config 200
+[debug] [2023-06-21T06:13:55.728Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99/webApps/1:638284654746:web:c85ab945634c961bee5723/config {"projectId":"app223-2fa99","appId":"1:638284654746:web:c85ab945634c961bee5723","storageBucket":"app223-2fa99.appspot.com","apiKey":"AIzaSyBQMCnoSs09TOq4zX45ZTQQVMJIX0JAhH8","authDomain":"app223-2fa99.firebaseapp.com","messagingSenderId":"638284654746"}
+[debug] [2023-06-21T06:13:55.747Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99 [none]
+[debug] [2023-06-21T06:13:56.988Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99 200
+[debug] [2023-06-21T06:13:56.988Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99 {"projectId":"app223-2fa99","projectNumber":"638284654746","displayName":"app223","name":"projects/app223-2fa99","resources":{"hostingSite":"app223-2fa99"},"state":"ACTIVE","etag":"1_86e8b502-be21-46fc-a66f-77027de35233"}
+[info] i  hosting[app223-2fa99]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[app223-2fa99]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[debug] [2023-06-21T06:17:13.441Z] ----------------------------------------------------------------------
+[debug] [2023-06-21T06:17:13.444Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bhard\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-06-21T06:17:13.444Z] CLI Version:   12.4.0
+[debug] [2023-06-21T06:17:13.445Z] Platform:      win32
+[debug] [2023-06-21T06:17:13.445Z] Node Version:  v18.16.0
+[debug] [2023-06-21T06:17:13.445Z] Time:          Wed Jun 21 2023 11:47:13 GMT+0530 (India Standard Time)
+[debug] [2023-06-21T06:17:13.446Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-21T06:17:13.593Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-21T06:17:13.594Z] > authorizing via signed-in user (bhardwajaddy223@gmail.com)
+[debug] [2023-06-21T06:17:13.594Z] [iam] checking project app223-2fa99 for permissions ["firebase.projects.get"]
+[debug] [2023-06-21T06:17:13.596Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/app223-2fa99:testIamPermissions [none]
+[debug] [2023-06-21T06:17:13.597Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/app223-2fa99:testIamPermissions x-goog-quota-user=projects/app223-2fa99
+[debug] [2023-06-21T06:17:13.597Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/app223-2fa99:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-06-21T06:17:15.102Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/app223-2fa99:testIamPermissions 200
+[debug] [2023-06-21T06:17:15.102Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/app223-2fa99:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-06-21T06:17:15.104Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99 [none]
+[debug] [2023-06-21T06:17:15.561Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99 200
+[debug] [2023-06-21T06:17:15.562Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99 {"projectId":"app223-2fa99","projectNumber":"638284654746","displayName":"app223","name":"projects/app223-2fa99","resources":{"hostingSite":"app223-2fa99"},"state":"ACTIVE","etag":"1_86e8b502-be21-46fc-a66f-77027de35233"}
+[info] 
+[info] === Serving from 'C:\Users\bhard\OneDrive\Desktop\firebase\userForm-firebase'...
+[info] 
+[debug] [2023-06-21T06:17:15.567Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/app223-2fa99/sites 
+[debug] [2023-06-21T06:17:16.522Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/app223-2fa99/sites 200
+[debug] [2023-06-21T06:17:16.522Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/app223-2fa99/sites {"sites":[{"name":"projects/app223-2fa99/sites/app223-2fa99","defaultUrl":"https://app223-2fa99.web.app","appId":"1:638284654746:web:c85ab945634c961bee5723","type":"DEFAULT_SITE"}]}
+[debug] [2023-06-21T06:17:16.523Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99/webApps/1:638284654746:web:c85ab945634c961bee5723/config [none]
+[debug] [2023-06-21T06:17:17.783Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99/webApps/1:638284654746:web:c85ab945634c961bee5723/config 200
+[debug] [2023-06-21T06:17:17.784Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99/webApps/1:638284654746:web:c85ab945634c961bee5723/config {"projectId":"app223-2fa99","appId":"1:638284654746:web:c85ab945634c961bee5723","storageBucket":"app223-2fa99.appspot.com","apiKey":"AIzaSyBQMCnoSs09TOq4zX45ZTQQVMJIX0JAhH8","authDomain":"app223-2fa99.firebaseapp.com","messagingSenderId":"638284654746"}
+[debug] [2023-06-21T06:17:17.810Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99 [none]
+[debug] [2023-06-21T06:17:18.273Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99 200
+[debug] [2023-06-21T06:17:18.273Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/app223-2fa99 {"projectId":"app223-2fa99","projectNumber":"638284654746","displayName":"app223","name":"projects/app223-2fa99","resources":{"hostingSite":"app223-2fa99"},"state":"ACTIVE","etag":"1_86e8b502-be21-46fc-a66f-77027de35233"}
+[info] i  hosting[app223-2fa99]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[app223-2fa99]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}

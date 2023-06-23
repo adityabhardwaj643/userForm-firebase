@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Auth from './components/Auth';
 import { db } from './firebase';
-import { getDocs, collection, addDoc, deleteDoc, doc, updateDoc,setDoc } from 'firebase/firestore';
+import { getDocs, collection, addDoc, deleteDoc, doc, updateDoc,setDoc ,getDoc} from 'firebase/firestore';
 
 function App() {
   const [userList, setUserList] = useState([]);
@@ -63,8 +63,15 @@ function App() {
   const deleteUser = async (id) => {
     const userDoc = doc(db, 'users', id);
     await deleteDoc(userDoc);
+  
+    // Decrement the user count
+    const userCountDocRef = doc(db, 'userCount', 'count');
+    const userCountSnapshot = await getDoc(userCountDocRef);
+    const userCount = userCountSnapshot.data().count || 0;
+    await setDoc(userCountDocRef, { count: userCount - 1 });
+  
     getUserList();
-  };
+  };
 
   const updateUser = async (id) => {
     const userDoc = doc(db, 'users', id);
